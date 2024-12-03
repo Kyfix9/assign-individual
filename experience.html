@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Clock Container -->
+    <div id="clock">00:00:00</div>
+
+    <script>
+        // Function to update the clock
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Add leading zeros if needed (e.g., 03:05:09)
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+            // Format the time string and display it
+            const timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately on page load
+        updateClock();
+    </script>
+
+   <header>
+        <h1>Ammar Rafiq bin Abdul Razak</h1>
+        <p>Information Technology Student | UiTM</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>My Internship: National Institute of Health (NIH)</strong> My internship is at Setia Alam, where I learn a lot of new things. I learn how to manage my time wisely to have a work-life balance, because to me we must enjoy whatever we do so that we will give our commitment.</li>
+                <p>My expectation when I came to that company was that the surrounding would be strict and too formal, but actually, it's totally different than what I thought. The company is really friendly and welcoming to me during my internship.</p>
+                <p>They are really fun to talk to and willing to teach me, and they make the vibe in the office like there is no age difference between all of us even though some of them are almost the same age as my parents.</p>
+            </ul>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section>
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <a href="#img1"><img src="intern1.jpg" alt="Photo 1"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img2"><img src="intern2.jpg" alt="Photo 2"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img3"><img src="intern5.jpg" alt="Photo 3"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img4"><img src="inter6.jpg" alt="Photo 4"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img5"><img src="intern3.jpg" alt="Photo 5"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img6"><img src="intern4.jpg" alt="Photo 6"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img7"><img src="intern7.jpg" alt="Photo 7"></a>
+                </div>
+                <div class="photo-item">
+                    <a href="#img8"><img src="intern8.jpg" alt="Photo 8"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Style for image pop-up -->
+    <div id="img1" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern1.jpg" alt="Photo 1">
+    </div>
+    <div id="img2" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern2.jpg" alt="Photo 2">
+    </div>
+    <div id="img3" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern5.jpg" alt="Photo 3">
+    </div>
+    <div id="img4" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="inter6.jpg" alt="Photo 4">
+    </div>
+    <div id="img5" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern3.jpg" alt="Photo 5">
+    </div>
+    <div id="img6" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern4.jpg" alt="Photo 6">
+    </div>
+    <div id="img7" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern7.jpg" alt="Photo 7">
+    </div>
+    <div id="img8" class="modal">
+        <a href="#" class="close">X</a>
+        <img src="intern8.jpg" alt="Photo 8">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ammar Rafiq bin Abdul Razak</p>
+        <div class="contact-links">
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/01164508304" target="_blank">
+                <img src="ws.jpeg" alt="WhatsApp" style="width: 30px; height: 30px;"/>
+            </a> 
+
+            <!-- Instagram Link -->
+            <a href="https://instagram.com/_ammarrafiq" target="_blank">
+                <img src="ig.jpeg" alt="Instagram" style="width: 30px; height: 30px;"/>
+            </a>
+
+            <!-- Telegram Link -->
+            <a href="https://t.me/AmmarRazak" target="_blank">
+                <img src="tele.jpeg" alt="Telegram" style="width: 30px; height: 30px;"/>
+            </a>
+
+            <!-- Email Link -->
+            <a href="mailto:ammarrafiqas@gmail.com" target="_blank">
+                <img src="email.png" alt="Email" style="width: 30px; height: 30px;"/>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

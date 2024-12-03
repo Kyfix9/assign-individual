@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the external CSS -->
+</head>
+<body>
+    <!-- Clock Container -->
+    <div id="clock">00:00:00</div>
+
+    <script>
+        // Function to update the clock
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Add leading zeros if needed (e.g., 03:05:09)
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+            // Format the time string and display it
+            const timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately on page load
+        updateClock();
+    </script>
+
+    <header>
+        <h1>Ammar Rafiq bin Abdul Razak</h1>
+        <p>Information Technology Student | UiTM</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>My Gallery</h2>
+            <div class="gallery">
+                <img src="uni1.jpg" alt="Image 1" class="gallery-item">
+                <img src="uni8.jpg" alt="Image 4" class="gallery-item">
+                <img src="uni5.jpg" alt="Image 5" class="gallery-item">
+                <img src="uni6.jpg" alt="Image 6" class="gallery-item">
+                <img src="uni7.jpg" alt="Image 7" class="gallery-item">
+                <img src="uni9.jpg" alt="Image 8" class="gallery-item">
+                <img src="uni4.jpg" alt="Image 9" class="gallery-item">
+                <img src="uni10.jpg" alt="Image 10" class="gallery-item">
+                <img src="uni11.jpg" alt="Image 11" class="gallery-item">
+                <img src="uni12.jpg" alt="Image 12" class="gallery-item">
+		<img src="hs1.jpg" alt="Image 13" class="gallery-item">
+                <img src="hs2.jpg" alt="Image 14" class="gallery-item">
+                <img src="hs3.jpg" alt="Image 15" class="gallery-item">
+                <img src="hs4.jpg" alt="Image 16" class="gallery-item">
+                <img src="hs5.jpg" alt="Image 17" class="gallery-item">
+                <img src="hs6.jpg" alt="Image 18" class="gallery-item">
+		<img src="hs7.jpg" alt="Image 19" class="gallery-item">
+                <img src="hs8.jpg" alt="Image 20" class="gallery-item">
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for image pop-up -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" />
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ammar Rafiq bin Abdul Razak</p>
+        <div class="contact-links">
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/01164508304" target="_blank">
+                <img src="ws.jpeg" alt="WhatsApp" style="width: 30px; height: 30px;"/>
+            </a> 
+
+            <!-- Instagram Link -->
+            <a href="https://instagram.com/_ammarrafiq" target="_blank">
+                <img src="ig.jpeg" alt="Instagram" style="width: 30px; height: 30px;"/>
+            </a>
+
+            <!-- Telegram Link -->
+            <a href="https://t.me/AmmarRazak" target="_blank">
+                <img src="tele.jpeg" alt="Telegram" style="width: 30px; height: 30px;"/>
+            </a>
+
+            <!-- Email Link -->
+            <a href="mailto:ammarrafiqas@gmail.com" target="_blank">
+                <img src="email.png" alt="Email" style="width: 30px; height: 30px;"/>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
