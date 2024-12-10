@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+        }
+        th {
+            background-color: #005b96;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        td img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        caption {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+           </style>
+</head>
+<body>
+ <!-- Clock Container -->
+    <div id="clock">00:00:00</div>
+
+    <script>
+        // Function to update the clock
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Add leading zeros if needed (e.g., 03:05:09)
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+            // Format the time string and display it
+            const timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately on page load
+        updateClock();
+    </script>
+
+    <header>
+        <h1>Ammar Rafiq bin Abdul Razak</h1>
+        <p>Information Technology Student | UiTM</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#experience" >Experience</a></li>
+            <li><a href="#education" class="active">Education</a></li> 
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Educational Background Section with an ID -->
+        <section id="education">
+            <h2>
+    <sup>Educational</sup> <sub>Background</sub>
+</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Logo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primary School</td>
+                        <td>Sekolah Kebangsaan Sungai Kapar Indah</td>
+                        <td><img src="gmbrski.jpeg" alt="SK Sungai Kapar Indah Logo"></td>
+                    </tr>
+                    <tr>
+                        <td>High School</td>
+                        <td>Sekolah Menengah Sains Tengku Abdullah</td>
+                        <td><img src="gmbrhs.jpeg" alt="SMS Tengku Abdullah Logo"></td>
+                    </tr>
+                    <tr>
+                        <td>University</td>
+                        <td>UiTM Kampus Segamat</td>
+                        <td><img src="gmbruitm.jpeg" alt="UiTM Logo"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- My School and University Experience Section -->
+        <section id="education">
+            <h2>
+    My <sup>School</sup> and University <sub>Experience</sub>
+</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Details</th>
+                        <th>Sports Achievements</th>
+                        <th>Additional Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Primary School</strong></td>
+                        <td>
+                            <p><strong>Duration:</strong> 5 years (7–12 years old)</p>
+                            <p><strong>Location:</strong> Less than 5 km from home.</p>
+                            <p><strong>Memorable Moments:</strong></p>
+                            <ul>
+                                <li>Playing in class</li>
+                                <li>Drinking tap water during the fasting month</li>
+                            </ul>
+                            <p><strong>Major Achievement:</strong> Completed UPSR.</p>
+                        </td>
+                        <td>
+                            <p>No major sports achievements at this level.</p>
+                        </td>
+                        <td>
+                            <p>I miss being a kid again—life without worrying about homework.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>High School</strong></td>
+                        <td>
+                            <p><strong>After UPSR:</strong> Joined a boarding school in Raub, Pahang.</p>
+                            <p><strong>Challenges:</strong> Adjusted to boarding school life and overcame various obstacles.</p>
+                            <p><strong>Memorable Moments:</strong></p>
+                            <ul>
+                                <li>Adjusting to boarding school life.</li>
+                                <li>In Form 5, staying in the school for 3 months without juniors—had so much fun!</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p><strong>Form 2:</strong></p>
+                            <ul>
+                                <li>International rugby competition: 10's (U15), 7's (U18).</li>
+                            </ul>
+                            <p><strong>Form 3:</strong></p>
+                            <ul>
+                                <li>International rugby competition: 10's (U15).</li>
+                                <li>MSSD sports:
+                                    <ul>
+                                        <li>Silver: 100m</li>
+                                        <li>Gold: 4x100m relay</li>
+                                    </ul>
+                                </li>
+                                <li>Football representation (performance not great).</li>
+                                <li>MSSP rugby 10's (U15): 2nd place; advanced to MSSM in Terengganu.</li>
+                                <li>MSSD rugby 15's (U18): 3rd place.</li>
+                                <li>MSSM rugby 10's (U15): 3rd place.</li>
+                            </ul>
+                        </td>
+                        <td rowspan="2">
+                            <p>Form 3 was a hectic year!</p>
+                            <p>Skipped classes for almost a month straight. :)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Participated in many activities and developed lasting friendships.</p>
+                        </td>
+                        <td>
+                            <p>All sports achievements already mentioned above.</p>
+                        </td>
+                    </tr>
+                    <!-- University Row -->
+                    <tr>
+                        <td><strong>University</strong></td>
+                        <td>
+                            <p><strong>Highlights:</strong> One of the best moments of my life. I met amazing friends, especially my classmates from Class E. <3</p>
+                        </td>
+                        <td>
+                            <p>No sports achievements, but many unforgettable memories!</p>
+                        </td>
+                        <td>
+                            <p>Even though I didn’t participate in sports, I cherished the bonds and experiences here.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+       <!-- Memory Photo Section -->
+<section id="memories">
+    <div style="text-align: center; margin-top: 40px;">
+        <h2>
+            My <sup>Memory</sup> <sub>Photos</sub>
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+            <!-- Memory Photo 1 -->
+            <div style="flex: 1 1 calc(20% - 20px); max-width: 200px; text-align: center;">
+                <img src="memory1.jpg" alt="Memory Photo 1" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <p style="margin-top: 10px; font-size: 0.9em; color: #333;">Football</p>
+            </div>
+            <!-- Memory Photo 2 -->
+            <div style="flex: 1 1 calc(20% - 20px); max-width: 200px; text-align: center;">
+                <img src="memory2.jpg" alt="Memory Photo 2" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <p style="margin-top: 10px; font-size: 0.9em; color: #333;">100m</p>
+            </div>
+            <!-- Memory Photo 3 -->
+            <div style="flex: 1 1 calc(20% - 20px); max-width: 200px; text-align: center;">
+                <img src="memory3.jpg" alt="Memory Photo 3" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <p style="margin-top: 10px; font-size: 0.9em; color: #333;">International rugby</p>
+            </div>
+            <!-- Memory Photo 4 -->
+            <div style="flex: 1 1 calc(20% - 20px); max-width: 200px; text-align: center;">
+                <img src="memory4.jpg" alt="Memory Photo 4" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <p style="margin-top: 10px; font-size: 0.9em; color: #333;">MSSD Rugby</p>
+            </div>
+            <!-- Memory Photo 5 -->
+            <div style="flex: 1 1 calc(20% - 20px); max-width: 200px; text-align: center;">
+                <img src="memory5.jpg" alt="Memory Photo 5" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <p style="margin-top: 10px; font-size: 0.9em; color: #333;">MSSP Rugby</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 300px; margin: 20px auto;">
+            <h2>Introduction to My Passion</h2>
+            <a href="https://www.youtube.com/watch?v=Q8bdqMeuIiM&pp=ygUVYmFzaWMgaG93IHRvIHBsYXkgcnVn" target="_blank">
+                <img src="yt.png" alt="Watch on YouTube" 
+                    style="width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ammar Rafiq bin Abdul Razak</p>
+        <div class="contact-links">
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/01164508304" target="_blank">
+                <img src="ws.jpeg" alt="WhatsApp" style="width: 30px; height: 30px;"/>
+            </a> 
+
+            <!-- Instagram Link -->
+            <a href="https://instagram.com/_ammarrafiq" target="_blank">
+                <img src="ig.jpeg" alt="Instagram" style="width: 30px; height: 30px;"/>
+            </a>
+
+            <!-- Telegram Link -->
+            <a href="https://t.me/AmmarRazak" target="_blank">
+                <img src="tele.jpeg" alt="Telegram" style="width: 30px; height: 30px;"/>
+            </a>
+
+            <!-- Email Link -->
+            <a href="mailto:ammarrafiqas@gmail.com" target="_blank">
+                <img src="email.png" alt="Email" style="width: 30px; height: 30px;"/>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
